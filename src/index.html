@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/style.scss">
+    <script src="./scripts/index.js" defer></script>
+    <title>Wildberris</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="basket__modal">
+            <div class="basket__content">
+                <p class="close">&times;</p>
+                <p class="text">В корзине пока пусто</p>
+                <div class="purchases"></div>
+                <p class="result">Итого:</p>
+                <p class="clear">Очистить корзину</p>                          
+            </div>
+        </div>
+      <div class="header">
+        <div class="header__container">
+          <div class="header__menu">
+            <!-- бургер -->
+          </div>
+          <div class="header__logo">
+            <a href="#"><img class="header__logo-img" src="./img/header/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="header__search">
+            <input class="header__input" type="text" placeholder="Поиск по товарам"/>
+          </div>
+          <div class="header__user">
+            <div class="header__basket">
+              <a href="#"
+                ><img class="header__basket-img" src="./img/header/shopping-cart.svg" alt="shopping cart"/>
+                <p class="header__text">Корзина</p>
+              </a>
+            </div>
+            <div class="header__account">
+              <a href="#"><img class="header__account-img" src="./img/header/user.svg" alt="shopping cart"/>
+                <p class="header__text">Профиль</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content container">
+        <div class="slider">
+          <div class="slide">
+            <img src="./img/slides/auto-sale.jpg" alt="Fog" />
+          </div>
+          <div class="slide">
+            <img src="./img/slides/colins-sale.jpg" alt="Sea stones" />
+          </div>
+          <div class="slide">
+            <img src="./img/slides/electronic-sale.jpg" alt="Morning sun" />
+          </div>
+          <div class="slide">
+            <img src="./img/slides/october-sale.jpg" alt="Savannah" />
+          </div>
+          <div class="slide active">
+            <img src="./img/slides/colins-sale.jpg" alt="Blueberries" />
+          </div>
+          <div id="btn-prev"></div>
+          <div id="btn-next"></div>
+          
+        <div class="wrapper__dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+        </div>
+      </div>
+        
+      <div class="goods container">
+        <p class="goods__text">Хиты продаж</p>
+        <div class="goods__cards" id="cards"></div>
+      </div>
+    </div>
+</body>
+</html>

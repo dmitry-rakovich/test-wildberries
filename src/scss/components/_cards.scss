@@ -1,0 +1,67 @@
+.goods__cards {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   margin-top: 4em;
+
+   @include sm {
+    justify-content: center;
+    margin-top: 3em;
+   }
+}
+
+.goods__text {
+    font-size: 2em;
+    font-weight: bold;
+    
+    @include sm {
+        font-size: 3em;
+        text-align: center;
+    }
+}
+
+.card {
+    position: relative;
+    margin-bottom: 4em;
+    padding: 0 2em;
+    width: 250px;
+    height: 300px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 10px;
+    
+    @include sm {
+        width: 200px;
+        height: 250px;
+        
+    }
+}
+
+.card__image {
+    width: 100%;
+    height: 250px;
+
+    @include sm {
+        height: 215px;
+    }
+}
+
+.like {
+    position: absolute;
+    top: 2em;
+    right: 2em;
+}
+
+.cart {
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+}
+
+.card__text {
+    font-size: 1.5em;
+}
+
+.card__price {
+    font-size: 2em;
+    color: rgb(182, 32, 150);
+}

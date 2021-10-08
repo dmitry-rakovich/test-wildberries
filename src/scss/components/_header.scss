@@ -1,0 +1,102 @@
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4em;
+    width: 100%;
+    background-color: $color_violet;
+
+    @include md {
+       margin-bottom: 2.5em;
+        
+    }
+
+    @include sm {
+        margin-bottom: 1.5em;
+    }
+}
+
+
+.header__search {
+    margin: 2em 4em 2em 0;
+    width: 40%;
+
+    @include sm {
+        width: 60%;
+    }
+}
+
+.header__input {
+    padding: 0.8em;
+    width: 100%;
+    font-size: 2em;
+    border-radius: 0.8em;
+    outline: none;
+    opacity: 0.7;
+
+    @include md {
+        padding: 0.7em;
+        font-size: 1.5em;
+        border-radius: 0.5em;
+    }
+
+    @include sm {
+
+        padding: 0.5em;
+        font-size: 1.3em;
+    }
+}
+
+.header__user {
+    display: flex;
+}
+
+.header__logo-img {
+    width: 100%;
+
+    @include md {
+        width: 75%;
+    }
+
+    @include sm {
+        width: 65%;
+        margin-left: 1.2em;
+    }
+}
+
+.header__basket-img {
+
+    @include md {
+        width: 56%;
+    }
+}
+
+.header__account-img {
+
+    @include md {
+        width: 50%;
+    }
+}
+
+.header__text {
+    font-size: 1.5em;
+    color: $color-white;
+    
+    @include md {
+        font-size: 1.3em;
+    }
+
+    @include sm {
+        font-size: 1.4em;
+    }
+}
+.header__basket {
+    margin-right: 2em;
+    text-align: center;
+}
+
+.header__account {
+    margin-right: 1em;
+    text-align: center;
+}
+

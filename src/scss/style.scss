@@ -1,0 +1,14 @@
+@import '../scss/global/mixins';
+
+//Default config
+@import '../scss/global/variables';
+@import '../scss/global/normalize';
+
+
+// Components
+@import '../scss/components/base';
+@import '../scss/components/header';
+@import '../scss/components/slider';
+@import '../scss/components/cards';
+@import '../scss/components/basket'
+
